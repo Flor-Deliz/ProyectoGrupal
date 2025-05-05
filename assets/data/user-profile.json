@@ -1,0 +1,22 @@
+{
+    "name": "Juan Pérez",
+    "email": "juan@example.com",
+    "pets": [
+      {
+        "id": 1,
+        "name": "Max",
+        "type": "Perro",
+        "breed": "Labrador",
+        "photo": "/assets/images/pets/dog1.jpg"
+      }
+    ],
+    "bookings": [
+      {
+        "id": 1,
+        "service": "Paseo de mascotas",
+        "date": "2025-06-15",
+        "time": "15:00",
+        "caretaker": "María López"
+      }
+    ]
+  }

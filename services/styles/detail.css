@@ -1,0 +1,374 @@
+/* services/detail.css - Estilos para detalle de servicio */
+
+.service-detail {
+    padding: 2rem 0;
+}
+
+/* Galería de imágenes */
+.service-gallery {
+    margin-bottom: 2rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Layout principal */
+.service-main-info {
+    margin-bottom: 3rem;
+}
+
+.service-header {
+    margin-bottom: 2rem;
+}
+
+.service-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--gray-900);
+}
+
+.service-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--gray-600);
+}
+
+.rating {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.rating i {
+    margin-right: 0.25rem;
+}
+
+.location i {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* Descripción y características */
+.service-description {
+    margin-bottom: 2rem;
+}
+
+.service-description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--gray-800);
+}
+
+.service-description p,
+.service-description ul {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.service-description li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.service-description li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.service-features {
+    margin-bottom: 2rem;
+}
+
+.service-features h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--gray-800);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: var(--gray-100);
+    border-radius: var(--radius-md);
+}
+
+.feature i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+/* Panel de reserva */
+.booking-panel {
+    position: relative;
+}
+
+.booking-card {
+    position: sticky;
+    top: 1rem;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    background: white;
+}
+
+.price {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.price .amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: block;
+    line-height: 1;
+}
+
+.price .unit {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+
+.availability {
+    margin-bottom: 1.5rem;
+}
+
+.availability h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--gray-800);
+}
+
+.calendar {
+    background-color: var(--gray-100);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    text-align: center;
+}
+
+.calendar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.booking-form h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--gray-800);
+}
+
+/* Reseñas */
+.service-reviews {
+    padding: 3rem 0;
+    background-color: var(--gray-50);
+    margin: 3rem 0;
+}
+
+.review-summary {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.overall-rating {
+    text-align: center;
+    min-width: 120px;
+}
+
+.rating-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--gray-900);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.rating-stars {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.rating-count {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+
+.rating-bars {
+    flex: 1;
+    min-width: 250px;
+}
+
+.rating-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.bar-container {
+    flex: 1;
+    height: 8px;
+    background-color: var(--gray-200);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background-color: var(--accent-color);
+}
+
+.reviews-list {
+    margin-bottom: 2rem;
+}
+
+.review-card {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.review-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-info h4 {
+    margin-bottom: 0.25rem;
+}
+
+.review-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.review-meta .rating {
+    font-size: 0.9rem;
+}
+
+.review-meta .date {
+    color: var(--gray-500);
+    font-size: 0.85rem;
+}
+
+.review-content {
+    line-height: 1.7;
+}
+
+/* Mapa de ubicación */
+.service-location {
+    padding-bottom: 3rem;
+}
+
+.service-location h2 {
+    margin-bottom: 1.5rem;
+}
+
+.map-container {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 400px;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.address-card {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    max-width: 250px;
+}
+
+.address-card h4 {
+    margin-bottom: 0.5rem;
+    color: var(--gray-800);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.address-card p {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+    .service-detail .container {
+        display: grid;
+        grid-template-columns: 1fr 350px;
+        gap: 2rem;
+        align-items: start;
+    }
+    
+    .service-gallery {
+        grid-column: 1 / -1;
+    }
+    
+    .booking-panel {
+        grid-column: 2;
+        grid-row: 2 / 4;
+    }
+    
+    .service-reviews,
+    .service-location {
+        grid-column: 1;
+    }
+}

@@ -1,0 +1,30 @@
+<extends src="../../../shared/layouts/dashboard.html">
+    <block name="title">Mis Mascotas - PetCare</block>
+    
+    <block name="styles">
+      <link rel="stylesheet" href="../../styles/user/pets.css">
+    </block>
+    
+    <block name="dashboard-content">
+      <section class="pets-header">
+        <h1>Mis Mascotas</h1>
+        <a href="add.html" class="btn btn-primary">
+          <i class="fas fa-plus"></i> Añadir mascota
+        </a>
+      </section>
+      
+      <div class="pets-container">
+        <div class="pets-grid" id="petsList">
+          <!-- Se llena dinámicamente -->
+          <div class="loading-spinner">
+            <i class="fas fa-paw fa-spin"></i>
+            <p>Cargando mascotas...</p>
+          </div>
+        </div>
+      </div>
+    </block>
+    
+    <block name="scripts">
+      <script src="../../js/user/pets.js"></script>
+    </block>
+  </extends>

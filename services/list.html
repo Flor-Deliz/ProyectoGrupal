@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare - Servicios para Mascotas</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="styles/list.css">
+    
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar compartido -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo-icon.png" alt="PetCare">
+                <span>PetCare</span>
+            </a>
+            <div class="menu">
+                <a href="../index.html">Inicio</a>
+                <a href="list.html" class="active">Servicios</a>
+                <a href="../profiles/user/dashboard.html">Mi Cuenta</a>
+                <a href="../auth/login.html" class="btn btn-outline">Ingresar</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Filtros de búsqueda -->
+    <section class="search-filters">
+        <div class="container">
+            <h1>Encuentra el servicio perfecto</h1>
+            
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label for="service-type">Tipo de servicio</label>
+                    <select id="service-type">
+                        <option value="">Todos</option>
+                        <option value="walking">Paseos</option>
+                        <option value="boarding">Alojamiento</option>
+                        <option value="grooming">Peluquería</option>
+                        <option value="vet">Veterinario</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="location">Ubicación</label>
+                    <input type="text" id="location" placeholder="Ej: Cusco Centro">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-range">Rango de precios</label>
+                    <select id="price-range">
+                        <option value="">Todos</option>
+                        <option value="0-20">S/0 - S/20</option>
+                        <option value="20-50">S/20 - S/50</option>
+                        <option value="50-100">S/50 - S/100</option>
+                        <option value="100+">Más de S/100</option>
+                    </select>
+                </div>
+                
+                <button id="apply-filters" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados de búsqueda -->
+    <section class="services-list">
+        <div class="container">
+            <div class="sort-options">
+                <span>Ordenar por:</span>
+                <button class="sort-btn active" data-sort="rating">Mejor valorados</button>
+                <button class="sort-btn" data-sort="price-asc">Precio (menor a mayor)</button>
+                <button class="sort-btn" data-sort="price-desc">Precio (mayor a menor)</button>
+            </div>
+            
+            <div class="services-grid" id="services-container">
+                <!-- Los servicios se cargarán dinámicamente aquí -->
+                <div class="loading-spinner">
+                    <i class="fas fa-paw fa-spin"></i>
+                    <p>Cargando servicios...</p>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="btn btn-outline" id="prev-page" disabled>
+                    <i class="fas fa-chevron-left"></i> Anterior
+                </button>
+                <span id="page-info">Página 1 de 3</span>
+                <button class="btn btn-outline" id="next-page">
+                    Siguiente <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer compartido -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="../assets/images/logo.png" alt="PetCare" class="footer-logo">
+                    <p>Conectando dueños de mascotas con cuidadores profesionales desde 2025.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Paseos</a></li>
+                        <li><a href="#">Alojamiento</a></li>
+                        <li><a href="#">Peluquería</a></li>
+                        <li><a href="#">Veterinarios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Garantía de servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PetCare - Universidad Nacional de San Antonio Abad del Cusco</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/services.js"></script>
+    <script src="js/list.js"></script>
+</body>
+</html>

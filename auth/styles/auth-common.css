@@ -1,0 +1,108 @@
+/* auth-common.css - Estilos compartidos para autenticación */
+
+.auth-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.auth-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.auth-brand {
+    flex: 1;
+    padding: 4rem;
+    background: linear-gradient(135deg, #4CAF50, #2196F3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.auth-brand img {
+    width: 120px;
+    margin: 0 auto 2rem;
+}
+
+.auth-brand h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.auth-brand p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.auth-form {
+    flex: 1;
+    padding: 4rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #2196F3;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.auth-footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #6c757d;
+}
+
+.auth-footer a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .auth-container {
+        flex-direction: column;
+    }
+    
+    .auth-brand, .auth-form {
+        padding: 2.5rem;
+    }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare - Servicios de Cuidado para Mascotas</title>
+    
+    <!-- Metatags SEO -->
+    <meta name="description" content="Encuentra cuidadores profesionales para tus mascotas. Servicios de paseo, alojamiento, peluquería y más en Cusco.">
+    <meta name="keywords" content="cuidado mascotas, paseadores perros, alojamiento mascotas, peluquería canina, veterinario a domicilio">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="shared/styles/components/buttons.css">
+    <link rel="stylesheet" href="shared/styles/components/cards.css">
+    <link rel="stylesheet" href="styles/home.css"> <!-- Estilos específicos para home -->
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconexión para fuentes y APIs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <include src="shared/components/navbar/navbar.html"></include>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Cuidado profesional para tus mejores amigos</h1>
+                <p class="hero-subtitle">Conectamos dueños responsables con cuidadores verificados en Cusco</p>
+                
+                <div class="hero-actions">
+                    <a href="services/list.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-search"></i> Buscar cuidadores
+                    </a>
+                    <a href="auth/register.html" class="btn btn-outline btn-lg">
+                        <i class="fas fa-user-plus"></i> Regístrate
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="assets/images/hero-dog.png" alt="Perro feliz" class="slide-up">
+            </div>
+        </div>
+        
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#4CAF50"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="#4CAF50"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#4CAF50"></path>
+            </svg>
+        </div>
+    </section>
+    
+    <!-- Servicios Destacados -->
+    <section class="featured-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Todo lo que tu mascota necesita en un solo lugar</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <h3>Paseos</h3>
+                    <p>Paseos personalizados según la energía y necesidades de tu mascota</p>
+                    <a href="services/list.html?type=walking" class="btn btn-text">
+                        Ver paseadores <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card fade-in" style="animation-delay: 0.2s">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Alojamiento</h3>
+                    <p>Hogares temporales donde tu mascota se sentirá como en casa</p>
+                    <a href="services/list.html?type=boarding" class="btn btn-text">
+                        Ver alojamientos <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card fade-in" style="animation-delay: 0.4s">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Peluquería</h3>
+                    <p>Servicios de estética y cuidado para que luzcan perfectos</p>
+                    <a href="services/list.html?type=grooming" class="btn btn-text">
+                        Ver peluquerías <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card fade-in" style="animation-delay: 0.6s">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Veterinarios</h3>
+                    <p>Profesionales de la salud animal disponibles cuando los necesites</p>
+                    <a href="services/list.html?type=vet" class="btn btn-text">
+                        Ver veterinarios <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cómo Funciona -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Cómo funciona PetCare?</h2>
+                <p class="section-subtitle">Encuentra al cuidador perfecto en solo 3 pasos</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Busca</h3>
+                        <p>Encuentra cuidadores cerca de tu ubicación con los filtros de búsqueda</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Reserva</h3>
+                        <p>Agenda el servicio y realiza el pago de forma segura en nuestra plataforma</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Disfruta</h3>
+                        <p>Recibe actualizaciones y disfruta sabiendo que tu mascota está en buenas manos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <p class="section-subtitle">Más de 500 dueños de mascotas confían en nosotros</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "María cuida de mi perro Max como si fuera suyo. Las fotos y reportes que me envía me dan mucha tranquilidad."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/users/user1.jpg" alt="Juan Pérez">
+                        <div>
+                            <h4>Juan Pérez</h4>
+                            <p>Dueño de Max (Labrador)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Cuando viajo por trabajo, sé que mi gata Luna está en buenas manos con los cuidadores de PetCare."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/users/user2.jpg" alt="Ana Gómez">
+                        <div>
+                            <h4>Ana Gómez</h4>
+                            <p>Dueña de Luna (Siamés)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>¿Eres cuidador profesional?</h2>
+                    <p>Únete a nuestra plataforma y ofrece tus servicios a dueños de mascotas en tu zona.</p>
+                    <a href="auth/register.html?type=caretaker" class="btn btn-outline btn-lg">
+                        Regístrate como cuidador
+                    </a>
+                </div>
+                <div class="cta-image">
+                    <img src="assets/images/cta-caretaker.png" alt="Cuidador con mascotas">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <include src="shared/components/footer/footer.html"></include>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="shared/js/utils/helpers.js"></script>
+    
+    <!-- Inicialización de componentes -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animaciones al hacer scroll
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.fade-in, .slide-up');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if(elementPosition < screenPosition) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Ejecutar al cargar la página
+            
+            // Actualizar estado de autenticación en navbar
+            if (typeof updateAuthState === 'function') {
+                updateAuthState();
+            }
+        });
+    </script>
+</body>
+</html>

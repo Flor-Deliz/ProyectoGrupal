@@ -1,0 +1,72 @@
+<extends src="../../shared/layouts/dashboard.html">
+    <block name="title">Mi Panel - PetCare</block>
+    
+    <block name="styles">
+      <link rel="stylesheet" href="../styles/user/dashboard.css">
+    </block>
+    
+    <block name="dashboard-content">
+      <section class="dashboard-header">
+        <h1>Bienvenido, <span id="userName">Usuario</span></h1>
+        <p>Resumen de tu actividad reciente</p>
+      </section>
+      
+      <div class="dashboard-grid">
+        <!-- Tarjeta de mascotas -->
+        <div class="dashboard-card pets-card">
+          <div class="card-header">
+            <h2>Mis Mascotas</h2>
+            <a href="pets/list.html" class="btn btn-text">Ver todas</a>
+          </div>
+          <div class="pets-grid" id="petsPreview">
+            <!-- Se llena dinámicamente -->
+          </div>
+          <a href="pets/add.html" class="btn btn-outline btn-block">
+            <i class="fas fa-plus"></i> Añadir mascota
+          </a>
+        </div>
+        
+        <!-- Próximas reservas -->
+        <div class="dashboard-card bookings-card">
+          <div class="card-header">
+            <h2>Próximas Reservas</h2>
+            <a href="bookings/list.html" class="btn btn-text">Ver todas</a>
+          </div>
+          <div class="bookings-list" id="bookingsPreview">
+            <!-- Se llena dinámicamente -->
+          </div>
+        </div>
+        
+        <!-- Reseñas recientes -->
+        <div class="dashboard-card reviews-card">
+          <div class="card-header">
+            <h2>Reseñas Recientes</h2>
+          </div>
+          <div class="reviews-list" id="reviewsPreview">
+            <!-- Se llena dinámicamente -->
+          </div>
+        </div>
+        
+        <!-- Estadísticas -->
+        <div class="dashboard-card stats-card">
+          <div class="card-header">
+            <h2>Estadísticas</h2>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value" id="totalBookings">0</div>
+              <div class="stat-label">Reservas totales</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" id="favoriteService">-</div>
+              <div class="stat-label">Servicio favorito</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </block>
+    
+    <block name="scripts">
+      <script src="../js/user/dashboard.js"></script>
+    </block>
+  </extends>

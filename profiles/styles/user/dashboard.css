@@ -1,0 +1,118 @@
+/* Dashboard principal */
+.dashboard-header {
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-header p {
+    color: var(--gray-600);
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .dashboard-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-header h2 {
+    font-size: 1.25rem;
+  }
+  
+  /* Tarjeta de mascotas */
+  .pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pet-card {
+    text-align: center;
+  }
+  
+  .pet-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 0.5rem;
+    border: 3px solid var(--primary-light);
+  }
+  
+  .pet-name {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  
+  /* Lista de reservas */
+  .bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .booking-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    background: var(--gray-50);
+  }
+  
+  .booking-service {
+    font-weight: 500;
+  }
+  
+  .booking-date {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+  }
+  
+  /* Estadísticas */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr;
+    }
+  }

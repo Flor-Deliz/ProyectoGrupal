@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Paseo de Mascotas | PetCare</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="styles/detail.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper JS (para galería de imágenes) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Navbar (igual que en list.html) -->
+    <nav class="navbar">...</nav>
+
+    <!-- Contenido principal -->
+    <main class="service-detail">
+        <div class="container">
+            <!-- Galería de imágenes -->
+            <div class="service-gallery">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../assets/images/services/walking-1.jpg" alt="Paseo de perros">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/images/services/walking-2.jpg" alt="Paseo en parque">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            
+            <!-- Información principal -->
+            <div class="service-main-info">
+                <div class="service-header">
+                    <h1>Paseo de mascotas profesional</h1>
+                    <div class="service-meta">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                            <span>(24 reseñas)</span>
+                        </div>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Cusco Centro, Perú</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-description">
+                    <h2>Descripción del servicio</h2>
+                    <p>Ofrezco paseos profesionales para tu mascota con rutas seguras y adecuadas según la energía y necesidades de tu perro. Cada paseo incluye:</p>
+                    <ul>
+                        <li>Duración de 30 o 60 minutos</li>
+                        <li>Reporte con fotos y mapa del recorrido</li>
+                        <li>Hidratación durante el paseo</li>
+                        <li>Refuerzo básico de obediencia</li>
+                    </ul>
+                </div>
+                
+                <div class="service-features">
+                    <h2>Características</h2>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Disponible 7 días</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-dog"></i>
+                            <span>Todos los tamaños</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificado en cuidado</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-home"></i>
+                            <span>Recojo a domicilio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panel de reserva -->
+            <div class="booking-panel">
+                <div class="booking-card">
+                    <div class="price">
+                        <span class="amount">S/25</span>
+                        <span class="unit">por paseo</span>
+                    </div>
+                    
+                    <div class="availability">
+                        <h3>Disponibilidad</h3>
+                        <div class="calendar">
+                            <!-- Aquí iría un calendario interactivo -->
+                            <img src="../assets/images/ui/calendar-placeholder.jpg" alt="Calendario">
+                        </div>
+                    </div>
+                    
+                    <div class="booking-form">
+                        <h3>Reservar servicio</h3>
+                        <div class="form-group">
+                            <label for="booking-date">Fecha</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-time">Hora</label>
+                            <select id="booking-time" required>
+                                <option value="">Seleccione hora</option>
+                                <option value="08:00">8:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-pets">Mascota(s)</label>
+                            <select id="booking-pets" required>
+                                <option value="">Seleccione mascota</option>
+                                <option value="1">Max (Labrador)</option>
+                                <option value="2">Luna (Golden Retriever)</option>
+                                <option value="3">Nueva mascota...</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="book-now">
+                            <i class="fas fa-calendar-check"></i> Reservar ahora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Reseñas -->
+        <section class="service-reviews">
+            <div class="container">
+                <h2>Reseñas de clientes</h2>
+                
+                <div class="review-summary">
+                    <div class="overall-rating">
+                        <div class="rating-number">4.8</div>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="rating-count">24 reseñas</div>
+                    </div>
+                    
+                    <div class="rating-bars">
+                        <div class="rating-bar">
+                            <span>5 estrellas</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 80%"></div>
+                            </div>
+                            <span>19</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>4 estrellas</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 15%"></div>
+                            </div>
+                            <span>4</span>
+                        </div>
+                        <!-- Más barras de rating -->
+                    </div>
+                </div>
+                
+                <div class="reviews-list">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="../assets/images/users/user-1.jpg" alt="Usuario" class="reviewer-avatar">
+                            <div class="reviewer-info">
+                                <h4>Juan Pérez</h4>
+                                <div class="review-meta">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="date">15/04/2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>Excelente servicio! María es muy profesional con mi perro Max. Siempre llega puntual y me envía fotos durante el paseo. Totalmente recomendada!</p>
+                        </div>
+                    </div>
+                    <!-- Más reseñas -->
+                </div>
+                
+                <button class="btn btn-outline" id="load-more-reviews">
+                    <i class="fas fa-plus"></i> Cargar más reseñas
+                </button>
+            </div>
+        </section>
+        
+        <!-- Mapa de ubicación -->
+        <section class="service-location">
+            <div class="container">
+                <h2>Ubicación</h2>
+                <div class="map-container">
+                    <!-- Aquí iría un mapa interactivo (Google Maps o similar) -->
+                    <img src="../assets/images/ui/map-placeholder.jpg" alt="Ubicación en mapa" class="map-placeholder">
+                    <div class="map-overlay">
+                        <div class="address-card">
+                            <h4><i class="fas fa-map-marker-alt"></i> Zona de servicio</h4>
+                            <p>Cusco Centro y distritos aledaños</p>
+                            <p>Recojo a domicilio dentro de la zona marcada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (igual que en list.html) -->
+    <footer class="main-footer">...</footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

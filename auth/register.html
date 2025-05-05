@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare - Registro</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="styles/auth-common.css">
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-brand">
+            <img src="../assets/images/logo.png" alt="PetCare Logo">
+            <h1>Únete a PetCare</h1>
+            <p>Crea tu cuenta para comenzar</p>
+        </div>
+        
+        <form id="registerForm" class="auth-form">
+            <div class="form-group">
+                <label>Tipo de usuario</label>
+                <div class="user-type-selector">
+                    <button type="button" class="user-type-btn active" data-type="owner">
+                        <i class="fas fa-paw"></i>
+                        Dueño de mascota
+                    </button>
+                    <button type="button" class="user-type-btn" data-type="caretaker">
+                        <i class="fas fa-user-tie"></i>
+                        Cuidador
+                    </button>
+                    <input type="hidden" id="userType" value="owner">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="registerName">Nombre completo</label>
+                <input type="text" id="registerName" required placeholder="Ej: María López">
+            </div>
+            
+            <div class="form-group">
+                <label for="registerEmail">Correo electrónico</label>
+                <input type="email" id="registerEmail" required placeholder="tucorreo@ejemplo.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="registerPassword">Contraseña</label>
+                <input type="password" id="registerPassword" required placeholder="••••••••">
+                <small class="form-text">Mínimo 8 caracteres</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="registerConfirm">Confirmar contraseña</label>
+                <input type="password" id="registerConfirm" required placeholder="••••••••">
+            </div>
+            
+            <div class="form-group form-check">
+                <input type="checkbox" id="termsAgreement" required>
+                <label for="termsAgreement">Acepto los <a href="#">Términos y Condiciones</a></label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Crear Cuenta</button>
+            
+            <div class="auth-footer">
+                <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="js/auth-common.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

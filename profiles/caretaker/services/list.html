@@ -1,0 +1,30 @@
+<extends src="../../shared/layouts/dashboard.html">
+    <block name="title">Mis Servicios - PetCare</block>
+    
+    <block name="styles">
+      <link rel="stylesheet" href="../styles/caretaker/services.css">
+    </block>
+    
+    <block name="dashboard-content">
+      <section class="services-header">
+        <h1>Mis Servicios</h1>
+        <a href="add.html" class="btn btn-primary">
+          <i class="fas fa-plus"></i> Nuevo servicio
+        </a>
+      </section>
+      
+      <div class="services-container">
+        <div class="services-grid" id="servicesList">
+          <!-- Se llena dinámicamente -->
+          <div class="loading-spinner">
+            <i class="fas fa-paw fa-spin"></i>
+            <p>Cargando servicios...</p>
+          </div>
+        </div>
+      </div>
+    </block>
+    
+    <block name="scripts">
+      <script src="../js/caretaker/services.js"></script>
+    </block>
+  </extends>

@@ -1,0 +1,31 @@
+{
+    "id": 1,
+    "name": "Paseo de mascotas profesional",
+    "description": "Ofrezco paseos profesionales para tu mascota con rutas seguras y adecuadas según la energía y necesidades de tu perro.",
+    "price": 25,
+    "priceUnit": "por paseo",
+    "rating": 4.8,
+    "location": "Cusco Centro, Perú",
+    "images": ["walking-1.jpg", "walking-2.jpg"],
+    "features": [
+        "Duración de 30 o 60 minutos",
+        "Reporte con fotos y mapa del recorrido",
+        "Hidratación durante el paseo",
+        "Refuerzo básico de obediencia"
+    ],
+    "metaFeatures": [
+        { "icon": "clock", "text": "Disponible 7 días" },
+        { "icon": "dog", "text": "Todos los tamaños" },
+        { "icon": "certificate", "text": "Certificado en cuidado" },
+        { "icon": "home", "text": "Recojo a domicilio" }
+    ],
+    "reviews": [
+        {
+            "user": "Juan Pérez",
+            "avatar": "user-1.jpg",
+            "rating": 5,
+            "date": "15/04/2025",
+            "comment": "Excelente servicio! María es muy profesional con mi perro Max. Siempre llega puntual y me envía fotos durante el paseo. Totalmente recomendada!"
+        }
+    ]
+}

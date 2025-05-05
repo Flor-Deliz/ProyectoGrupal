@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Paseo de mascotas profesional",
+        "description": "Paseos personalizados según las necesidades de tu mascota",
+        "type": "walking",
+        "price": 25,
+        "rating": 4.8,
+        "location": "Cusco Centro",
+        "image": "walking-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Alojamiento para perros",
+        "description": "Casa con jardín para que tu perro se sienta como en casa",
+        "type": "boarding",
+        "price": 50,
+        "rating": 4.5,
+        "location": "San Blas",
+        "image": "boarding-1.jpg"
+    }
+]

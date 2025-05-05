@@ -1,0 +1,85 @@
+<extends src="../../shared/layouts/dashboard.html">
+    <block name="title">Editar Perfil - PetCare</block>
+    
+    <block name="styles">
+      <link rel="stylesheet" href="../styles/caretaker/profile.css">
+    </block>
+    
+    <block name="dashboard-content">
+      <section class="profile-edit-header">
+        <h1>Mi Perfil Público</h1>
+        <p>Completa tu información para aparecer en las búsquedas</p>
+      </section>
+      
+      <form id="profileForm" class="profile-form">
+        <div class="form-section">
+          <h2>Información Básica</h2>
+          
+          <div class="form-group photo-upload">
+            <label>Foto de perfil</label>
+            <div class="photo-preview">
+              <img id="profilePhotoPreview" src="../../assets/images/caretakers/default.jpg" alt="Foto de perfil">
+              <label for="profilePhoto" class="upload-btn">
+                <i class="fas fa-camera"></i> Cambiar foto
+              </label>
+              <input type="file" id="profilePhoto" accept="image/*" class="hidden">
+            </div>
+          </div>
+          
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fullName">Nombre completo</label>
+              <input type="text" id="fullName" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="tagline">Eslogan profesional</label>
+              <input type="text" id="tagline" placeholder="Ej: Cuidador profesional con 5 años de experiencia">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="about">Sobre mí</label>
+            <textarea id="about" rows="4" required></textarea>
+            <small>Describe tu experiencia y enfoque con las mascotas</small>
+          </div>
+        </div>
+        
+        <div class="form-section">
+          <h2>Información de Contacto</h2>
+          
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="location">Ubicación</label>
+              <input type="text" id="location" required>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-section">
+          <h2>Certificaciones</h2>
+          <div id="certificationsContainer">
+            <!-- Certificaciones dinámicas -->
+          </div>
+          <button type="button" id="addCertification" class="btn btn-outline">
+            <i class="fas fa-plus"></i> Añadir certificación
+          </button>
+        </div>
+        
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-save"></i> Guardar cambios
+          </button>
+        </div>
+      </form>
+    </block>
+    
+    <block name="scripts">
+      <script src="../js/caretaker/profile.js"></script>
+    </block>
+  </extends>

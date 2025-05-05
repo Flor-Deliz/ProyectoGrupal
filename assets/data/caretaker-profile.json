@@ -1,0 +1,15 @@
+{
+    "name": "María López",
+    "tagline": "Cuidadora profesional con 5 años de experiencia",
+    "about": "Soy una amante de los animales con amplia experiencia en cuidado de mascotas...",
+    "phone": "+51 987654321",
+    "location": "Cusco, Perú",
+    "photo": "/assets/images/caretakers/caretaker1.jpg",
+    "certifications": [
+      {
+        "name": "Curso de Primeros Auxilios para Mascotas",
+        "institution": "Escuela Veterinaria del Perú",
+        "year": 2023
+      }
+    ]
+  }
